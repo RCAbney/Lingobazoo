@@ -1,22 +1,65 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Alatsi:regular,bold,italic&subset=latin,latin-ext");
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+#root {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "Alatsi", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #09d3ac;
+ul li {
+  text-align: center;
+  min-width: 60px;
+  height: 60px;
+  line-height: 30px;
+  padding: 1em;
+  color: white;
+  background: blue;
+  margin-right: 0.5rem;
+}
+
+ul li.correct {
+  background: green;
+}
+
+ul li.incorrect {
+  background: red;
+}
+
+ul li.out-of-place {
+  background: rebeccapurple;
+  border-radius: 50%;
+}
+
+input {
+  font-family: "Alatsi", sans-serif;
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  border: 1px solid #aaa;
+}
+
+input[type="submit"] {
+  margin-left: 1em;
+  color: #fff;
+  background: blue;
+  border: 0;
+  cursor: pointer;
 }
